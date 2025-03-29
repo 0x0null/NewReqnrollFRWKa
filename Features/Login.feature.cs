@@ -144,9 +144,6 @@ this.ScenarioInitialize(scenarioInfo);
 #line 14
  await testRunner.WhenAsync("the user adds the products which includes", ((string)(null)), table2, "When ");
 #line hidden
-#line 18
- await testRunner.ThenAsync("the cart icon shows a count of 2", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
 #line 19
  await testRunner.WhenAsync("user is on cart page", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden

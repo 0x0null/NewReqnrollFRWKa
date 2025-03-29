@@ -16,9 +16,5 @@
 
         public string getUrlValue(string key) => _config[key]!;
 
-        public string? GetUrl()
-        {
-            return _config.GetSection("url")?.GetValue<string>("suacedemourl");
-        }
     }
 }

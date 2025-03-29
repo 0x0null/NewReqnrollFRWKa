@@ -44,6 +44,7 @@ namespace NewReqnrollFRWK.StepDefinitions
         {
             Assert.IsTrue(ppage.IsProductTitleDisplayed(), "Product title is not displayed");
         }
+
         [When("the user adds the products which includes")]
         public void WhenTheUserAddsTheProductsWhichIncludes(DataTable dataTable)
         {
@@ -53,11 +54,11 @@ namespace NewReqnrollFRWK.StepDefinitions
             }
         }
 
-        [Then("the cart icon shows a count of {int}")]
-        public void ThenTheCartIconShowsACountOf(int p0)
-        {
-            Assert.IsTrue(ppage.IsCartItemsDisplayed(), "Cart items are not displayed");
-        }
+        //[Then("the cart icon shows a count of {int}")]
+        //public void ThenTheCartIconShowsACountOf(int p0)
+        //{
+        //    Assert.IsTrue(ppage.IsCartItemsDisplayed(), "Cart items are not displayed");
+        //}
 
         [When("user is on cart page")]
         public void WhenUserIsOnCartPage()

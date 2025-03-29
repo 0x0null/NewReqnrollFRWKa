@@ -11,8 +11,7 @@
         
          IWebElement CartPageClick => driver.FindElement(By.CssSelector(".shopping_cart_link"));
          IWebElement hamburgerMenuIcon => driver.FindElement(By.Id("react-burger-menu-btn"));
-         IWebElement logoutBtn => driver.FindElement(By.XPath("//a[@id='logout_sidebar_link' and @data-test='logout-sidebar-link' and text()='Logout']"));
-        IReadOnlyCollection<IWebElement> cartProductNames => driver.FindElements(By.XPath("//div[@class='inventory_item_name']"));
+         IReadOnlyCollection<IWebElement> cartProductNames => driver.FindElements(By.XPath("//div[@class='inventory_item_name']"));
 
         public void cartPageClick()
         {
