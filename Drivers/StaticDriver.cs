@@ -1,11 +1,5 @@
 ﻿namespace NewReqnrollFRWK.Drivers
 {
-   /* public class StaticDriver
-    {
-
-        public static IWebDriver driver;
-    }*/
-
     public class InitializeDriver
     {
         public IWebDriver driver;

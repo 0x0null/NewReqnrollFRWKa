@@ -1,5 +1,3 @@
-using static Microsoft.ApplicationInsights.MetricDimensionNames.TelemetryContext;
-
 namespace NewReqnrollFRWK.StepDefinitions
 {
     [Binding]
@@ -58,7 +56,6 @@ namespace NewReqnrollFRWK.StepDefinitions
         [Then("the cart icon shows a count of {int}")]
         public void ThenTheCartIconShowsACountOf(int p0)
         {
-            
             Assert.IsTrue(ppage.IsCartItemsDisplayed(), "Cart items are not displayed");
         }
 
@@ -68,7 +65,6 @@ namespace NewReqnrollFRWK.StepDefinitions
             ppage.CartPageClick();
         }
 
-     
         [Then("the product names are")]
         public void ThenTheProductNamesAre(DataTable dataTable)
         {
@@ -87,9 +83,7 @@ namespace NewReqnrollFRWK.StepDefinitions
         [Then("user click on logout button")]
         public void ThenUserClickOnLogoutButton()
         {
-            cpage.ClickLogout();
+            ppage.ClickLogout();
         }
-
-        
     }
 }
